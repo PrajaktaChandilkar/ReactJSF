@@ -1,0 +1,8 @@
+.student-data{
+    border: 5px solid black;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #eee;
+    margin: 10px;
+    width: 800px;
+}

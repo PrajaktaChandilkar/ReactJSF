@@ -1,19 +1,41 @@
-import React from "react";
+import React, { Component } from "react";
 import "./App.css";
 
 // import HelloClass from "./components/HelloClass";
-import HelloClassProps from "./components/HelloClassProps";
+// import HelloClassProps from "./components/HelloClassProps";
+  // import CounterClass from "./components/CounterClass"
 
-class App extends React.Component {
-  render() {
-    return (
-      <div className="App">
-        <HelloClassProps greetTo="World" />
-        <HelloClassProps greetTo="Africa" />
-      </div>
-    );
-  }
-}
+  // import CollegeStudents  from "./components/CollegeStudents"
+  import 'bootstrap/dist/css/bootstrap.min.css';
+import BootstrapBasics from "./components/image/BootstrapBasics";
+    class App extends Component {
+      render(){
+        return(
+          <div className="App">
+            <BootstrapBasics />
+          </div>
+         
+        )
+      }
+    }
+
+    // <div className="App">
+    //        <CollegeStudents />
+    //      </div>
+  //counter class
+// class App extends React.Component {
+//   render() {
+//     return (
+//       <div className="App">
+//         <CounterClass />
+//         {/* <HelloClassProps greetTo="Africa" /> */}
+//       </div>
+//     );
+//   }
+// }
+
+
+
 // function App() {
 //   return (
 //     <div className="App">

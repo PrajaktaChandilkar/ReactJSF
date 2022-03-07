@@ -1,0 +1,37 @@
+import "./App.css";
+import React, { Component } from "react";
+import NavbarComponent from "./component/NavbarComponent/NavbarComponent";
+import Product2 from "./component/Product2/Product2";
+import ProductsLoop from "./component/Products/ProductsLoop";
+// import Product3 from './component/Product3/Product3'
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div>
+        <NavbarComponent />
+        <h1 className="display-5">Welcome To Our site</h1>
+        <p className="lead">Feel free to explore...</p>
+        {/* <ProductsLoop /> */}
+        <Product2 />
+      </div>
+    );
+  }
+}
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <NavbarComponent />
+//       <h1 className='display-5'>Welcome To Our site</h1>
+//       <p className='lead'>Feel free to explore...</p>
+//       {/* <ProductsLoop /> */}
+//       <Product2 />
+//     </div>
+//   );
+// }
+
+export default App;
