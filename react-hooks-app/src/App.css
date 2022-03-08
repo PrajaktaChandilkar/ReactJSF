@@ -27,11 +27,7 @@
 .App-link {
   color: #61dafb;
 }
-.show-hide-btn{
-  margin-left: 50%;
-  margin-bottom: 20px;
 
-}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
