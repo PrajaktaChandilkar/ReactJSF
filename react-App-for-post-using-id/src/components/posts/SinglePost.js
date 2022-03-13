@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Button, Card, Spinner } from "react-bootstrap";
-// import './Posts.css'
-import "./Posts.css";
+import {useParams} from "react-router-dom";
 import axios from "axios";
+import "./Posts.css";
+
 
 // function ApiPosts()
-function ApiPosts() {
-  const [posts, setPosts] = useState([]);
+function SinglePost() {
+  const [post, setPost] = useState([]);
+  const { id } = useParams()
 
   useEffect(() => {
     // axios
@@ -19,8 +21,8 @@ function ApiPosts() {
       const fetchPost =async ()=>{
         try{
           const response =  await  axios
-          .get("https://jsonplaceholder.typicode.com/posts")
-          setPosts(response.data)
+          .get(`https://jsonplaceholder.typicode.com/posts/${id}`)
+          setPost(response.data)
   
         }catch(err){
           console.log(err)
@@ -28,11 +30,11 @@ function ApiPosts() {
       }
       fetchPost()
       
-  },[]);
+  },[id]);
   return (
     <>
-      {posts.length ? (
-        posts.map((post) => (
+    <h1>Post No {post.id}</h1>
+      {Object.keys(post).length ? (
           <Card
             className="post"
             border="dark"
@@ -62,7 +64,7 @@ function ApiPosts() {
               </small>
             </Card.Footer>
           </Card>
-        ))
+        
       ) : (
         <Spinner animation="border" />
       )}
@@ -70,4 +72,4 @@ function ApiPosts() {
   );
 }
 
-export default ApiPosts;
+export default SinglePost;

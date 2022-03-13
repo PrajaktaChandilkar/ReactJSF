@@ -1,11 +1,13 @@
+
 import React, { useState, useEffect } from "react";
 import { Button, Card, Spinner } from "react-bootstrap";
 // import './Posts.css'
 import "./Posts.css";
 import axios from "axios";
+import {Link, NavLink} from "react-router-dom"
 
 // function ApiPosts()
-function ApiPosts() {
+function Posts() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
@@ -44,7 +46,10 @@ function ApiPosts() {
               <small className="text-muted">User {post.userId}</small>
             </Card.Header>
             <Card.Body>
-              <Card.Title>{post.title}</Card.Title>
+              <Card.Title>
+                  <Link className="router-lonk" to={`posts/${post.id}`}>{post.title}</Link>
+                  
+              </Card.Title>
               <Card.Text>
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
@@ -70,4 +75,31 @@ function ApiPosts() {
   );
 }
 
-export default ApiPosts;
+export default Posts;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// export default Posts
+
+
+
+// jkhk

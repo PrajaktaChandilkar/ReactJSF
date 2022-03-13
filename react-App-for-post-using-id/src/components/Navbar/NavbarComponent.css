@@ -1,0 +1,12 @@
+.router-link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.router-link:hover{
+    color: inherit;
+}
+.active{
+    color: white;
+    text-decoration: none;
+}

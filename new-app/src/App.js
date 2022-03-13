@@ -24,10 +24,10 @@ function App() {
     <BrowserRouter>
       <Container>
         <NavbarComponent />{ ' '}
-        <Link to ='/'>Home</Link>{' '}
+        {/* <Link to ='/'>Home</Link>{' '}
         <Link to ='/About' >About </Link>{' '}
         <Link to='/Contact'>Contact</Link>{' '}
-        <Link to='/ApiPosts'>Posts</Link> {' '}
+        <Link to='/ApiPosts'>Posts</Link> {' '} */}
         <Routes>
           <Route path="/About" element={ <About />} />
           <Route path="/" element={<LandingPage />} />
