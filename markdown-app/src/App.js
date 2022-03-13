@@ -36,7 +36,7 @@ class App extends React.Component{
             <textarea onChange={this.handleChange} />
             <ReactMarkdown className='preview' children={this.state.markdown}/>
           </div>
-        );
+        )
   }
 }
 
