@@ -1,9 +1,9 @@
 import React from "react";
 
-function Contact() {
+function About() {
   return (
-    <>
-      <div>
+    <div>
+      <h1>
         “Pass the frying pan.” “You’ve forgotten the magic word,” said Harry
         irritably. The effect of this simple sentence on the rest of the family
         was incredible: Dudley gasped and fell off his chair with a crash that
@@ -33,9 +33,9 @@ function Contact() {
         Forbidden Forest in the grounds, and, especially, Quidditch, the most
         popular sport in the wizarding world (six tall goal posts, four flying
         balls, and fourteen players on broomsticks).
-      </div>
-    </>
+      </h1>
+    </div>
   );
 }
 
-export default Contact;
+export default About;

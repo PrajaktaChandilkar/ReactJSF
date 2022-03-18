@@ -1,11 +1,11 @@
 
 import './App.css';
-import Birthday from './Components/Birthday'
+import Button1 from './Component/Button1'
 
 function App() {
   return (
     <div className="App">
-      <Birthday/>
+      <Button1 />
     </div>
   );
 }

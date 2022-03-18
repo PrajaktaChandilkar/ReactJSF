@@ -5,9 +5,10 @@ import axios from "axios";
 import  "./Posts.css"
 
 
+
 // function ApiPosts()
 function SinglePost() {
-  const [post, setPosts] = useState([]);
+  const [post, setPost] = useState([]);
   const { id } = useParams()
 
   useEffect(() => {
@@ -22,7 +23,7 @@ function SinglePost() {
         try{
           const response =  await  axios
           .get(`https://jsonplaceholder.typicode.com/posts/${id}`)
-          setPosts(response.data)
+          setPost(response.data)
   
         }catch(err){
           console.log(err)
@@ -66,15 +67,11 @@ function SinglePost() {
           </Card>
         
       ) : (
-        <Spinner animation="border" />
+        // <Spinner animation="border" />
+        <h1>file not exist</h1>
       )}
     </>
   );
 }
 
 export default SinglePost;
-
-// a = true
-// b = false
-
-// c = a ? b : he

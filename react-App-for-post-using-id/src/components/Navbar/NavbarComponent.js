@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, NavDropdown, Nav, Navbar } from "react-bootstrap";
+import { Container,  Nav, Navbar } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
 //because w ehave added Link from react Dom so to do Home as bootstrap navbar color
 import "./NavbarComponent.css";
@@ -17,9 +17,16 @@ function NavbarComponent() {
               <Nav.Link
                 as={NavLink}
                 to="/"
-                className={({ isActive }) => (isActive ? "active" : "")}
+                className={({ isActive }) => (isActive ? "active" : " ")}
               >
                 Home
+              </Nav.Link>
+              <Nav.Link
+                as={NavLink}
+                to="/About"
+                className={({ isActive }) => (isActive ? "active" : " ")}
+              >
+                About
               </Nav.Link>
               <Nav.Link
                 as={NavLink}
@@ -39,7 +46,7 @@ function NavbarComponent() {
             <Nav>
               <Nav.Link
                 as={NavLink}
-                to="/Sign-up"
+                to="/SignUp"
                 className={({ isActive }) => (isActive ? "active" : "")}
               >
                 Sign-up

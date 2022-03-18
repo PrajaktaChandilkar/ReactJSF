@@ -2,17 +2,17 @@ import React, { useState, useEffect } from "react";
 import { Button, Card, Spinner } from "react-bootstrap";
 import {useParams} from "react-router-dom";
 import axios from "axios";
-import  "./Posts.css"
+// import  "./Posts.css"
 
 
 // function ApiPosts()
-function SinglePost() {
+function Post() {
   const [post, setPosts] = useState([]);
   const { id } = useParams()
 
   useEffect(() => {
     // axios
-      // .get("https://jsonplaceholder.typicode.com/posts")
+      // .get("https://jsonplaceholder.typicode.com/post")
       // .then((response) => setPosts(response.data))
       // .catch((err) => console.log(err));
 
@@ -72,9 +72,4 @@ function SinglePost() {
   );
 }
 
-export default SinglePost;
-
-// a = true
-// b = false
-
-// c = a ? b : he
+export default Post;
