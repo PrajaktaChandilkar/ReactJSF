@@ -5,7 +5,7 @@ function App(){
     return(
         <>
         <div className="container">hiipppi</div>
-        <div ><h1>okk<h2>nopjjjjj8jjjjjjjjjjjjjjjjj</h2></h1></div>
+        <div ><h1>okk<h2>njh</h2></h1></div>
         </>
     )
 }
